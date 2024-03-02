@@ -11,23 +11,25 @@ body {
 
 .container {
   background-color: #fff;
-  display: flex;
+display: flex;
   flex-direction: column;
 
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  width: 80%;
+  max-width: 400px; /* Set a maximum width for larger screens */
 }
 
 .input-container {
   text-align: center;
   margin-bottom: 20px;
-  display: flex;
+display: flex;
   flex-direction: column;
 }
 
 .number-input {
-  width: 200px;
+  width: 100%;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
@@ -63,4 +65,11 @@ body {
   border-radius: 4px;
   background-color: #f8f8f8;
   color: #333;
+}
+
+/* Media query for responsiveness */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 50%;
+  }
 }
